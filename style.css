@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #d63384;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+.page p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.page img {
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+
+
+/* Page Sections */
+.page {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #ffe6f0;
+    margin: 15px auto;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    background: white;
+    color: #d63384;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #d63384;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
